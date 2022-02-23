@@ -150,6 +150,32 @@ footer {
   color: white;
 }
 
+/* card hover effect */
+
+.Metric_card{
+  cursor: pointer;
+  transition: .5s ease;
+}
+
+.Metric_card:hover{
+  transition: .5s ease;
+  background-color: #136eaf;
+  color: white;
+}
+
+.Metric_card:hover h1{
+  color: white;
+}
+
+.Metric_card:hover span{
+  color: white;
+}
+
+.Metric_card:hover div{
+  color: white;
+  border-color:  white;
+}
+
 /* search form section */
 .search_form {
   background-color: white;
