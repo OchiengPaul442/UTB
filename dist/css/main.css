@@ -53,6 +53,14 @@ footer {
 /* navbar */
 
 
+/* logo */
+
+.logo a img {
+    width: 100%;
+    height: 60px;
+}
+
+
 /* Style the buttons */
 
 .list_btn {
@@ -140,7 +148,7 @@ footer {
     border: 1px solid green;
     margin-right: 10px;
     color: green;
-    padding: 6px;
+    padding: 7px;
 }
 
 .exp1_icon {
@@ -204,7 +212,7 @@ footer {
 /* search form section */
 
 .search_form {
-    background-color: white;
+    margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
     width: auto;
@@ -241,7 +249,17 @@ footer {
 
 /* mobile view  */
 
+@media (min-width: 780px) {
+    .exp2 {
+        width: 300px;
+    }
+}
+
 @media (max-width: 800px) {
+    .logo a img {
+        width: 68%;
+        height: 45px;
+    }
     #head_title h1 {
         font-size: 40px;
     }
