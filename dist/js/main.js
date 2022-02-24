@@ -1,5 +1,5 @@
 // Get the container element
-var btnContainer = document.getElementById("list_container");
+var btnContainer = document.getElementById("nav-content");
 
 // Get all buttons with class="btn" inside the container
 var btns = btnContainer.getElementsByClassName("list_btn");
