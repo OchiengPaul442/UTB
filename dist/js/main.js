@@ -1,7 +1,14 @@
 $(function() {
-    $(".list_btn").on('click', function() {
-        $(".list_btn.active").removeClass("active");
-        // adding classname 'active' to current click li 
-        $(this).addClass("active");
+    // hamburger menu
+    $(".hamburger_menu").on("click", function() {
+        $(this).hide();
+        $(".hamburger_menu2").show(100);
+        $(".mobiledropdown").slideToggle(100);
     });
+    $(".hamburger_menu2").on("click", function() {
+        $(this).hide();
+        $(".hamburger_menu").show(100);
+        $(".mobiledropdown").slideToggle(100);
+    });
+
 });

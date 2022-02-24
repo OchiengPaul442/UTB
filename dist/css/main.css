@@ -227,10 +227,59 @@ footer {
 }
 
 
+/* hiding both menu icon and dropdown in desktop view */
+
+.hamburger_menu,
+.hamburger_menu2 {
+    display: none;
+}
+
+.mobiledropdown {
+    display: none;
+}
+
+
 /* mobile view  */
 
 @media (max-width: 800px) {
     #head_title h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:1023px) {
+    .mobiledropdown {
+        height: 240px;
+        overflow-y: auto;
+        transition: all .5s ease-in;
+    }
+    .mobiledropdown ul {
+        margin: 0;
+        padding: 0 20px;
+        width: 100%;
+    }
+    .mobiledropdown ul li {
+        margin: 5px 0;
+        width: 100%;
+        position: relative;
+        border-radius: 12px;
+        background-color: aliceblue;
+    }
+    .mobiledropdown ul li a {
+        display: flex;
+        width: 100%;
+        align-items: end;
+    }
+    .hamburger_menu,
+    .hamburger_menu2 {
+        cursor: pointer;
+        padding: 10px;
+        align-content: center;
+        display: flex;
+        align-items: center;
+    }
+    .hamburger_menu,
+    .hamburger_menu2 svg {
         font-size: 40px;
     }
 }
