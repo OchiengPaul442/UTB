@@ -249,7 +249,7 @@ footer {
 
 @media (max-width:1023px) {
     .mobiledropdown {
-        height: 240px;
+        height: auto;
         overflow-y: auto;
         transition: all .5s ease-in;
     }
@@ -270,8 +270,14 @@ footer {
         width: 100%;
         align-items: end;
     }
-    .hamburger_menu,
     .hamburger_menu2 {
+        cursor: pointer;
+        padding: 10px;
+        align-content: center;
+        display: none;
+        align-items: center;
+    }
+    .hamburger_menu {
         cursor: pointer;
         padding: 10px;
         align-content: center;
