@@ -176,6 +176,7 @@ footer {
 /* card hover effect */
 
 .Metric_card {
+    border-radius: 30px;
     cursor: pointer;
     transition: .5s ease;
 }
