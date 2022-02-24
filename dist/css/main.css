@@ -5,10 +5,7 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-weight: 900;
   color: #136eaf;
-  font-family: "Josefin Sans", sans-serif;
 }
 
 h1,
@@ -24,9 +21,13 @@ h6 {
 
 body,
 html {
+  background: white;
   width: 100%;
   height: 100vh;
   position: relative;
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+  font-weight: 900;
 }
 
 .main_con {
