@@ -31,21 +31,6 @@ html {
     font-weight: 400;
 }
 
-
-/* welcome section */
-
-.welcome_handle {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    height: 400px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    align-content: center;
-}
-
 .main_con {
     width: 100%;
     min-height: 100vh;
@@ -55,6 +40,9 @@ html {
 .main_con main {
     padding-bottom: 120px;
 }
+
+
+/* footer */
 
 footer {
     position: absolute;
