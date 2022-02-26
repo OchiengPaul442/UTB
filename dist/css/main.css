@@ -169,18 +169,17 @@ footer {
     margin-right: 10px;
 }
 
-.exp3 {
-    border: 1px solid #00109b;
-    background-color: rgba(0, 16, 155, 0.3);
-    color: #00109b;
-}
-
 .create_fac_btn {
     padding: 7px;
     cursor: pointer;
     border-radius: 10px;
     background-color: #136eaf;
     color: white;
+}
+
+.facility_table tbody tr td {
+    border: 1px solid #1e40af;
+    padding: 20px;
 }
 
 
@@ -253,9 +252,9 @@ footer {
 /* mobile view  */
 
 @media (min-width: 780px) {
-    .exp2 {
+    /* .exp2 {
         width: 300px;
-    }
+    } */
 }
 
 @media (max-width: 800px) {
