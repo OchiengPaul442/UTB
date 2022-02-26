@@ -259,6 +259,9 @@ footer {
 }
 
 @media (max-width: 800px) {
+    .three_column_sec div {
+        width: 100%;
+    }
     .logo a img {
         width: 68%;
         height: 45px;
