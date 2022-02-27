@@ -6,14 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- css links -->
-    <link rel="stylesheet" href="../../dist/css/main.css" />
+    <link rel="stylesheet" href="../../../dist/css/main.css" />
     <!-- links to tailwind css -->
-    <link rel="stylesheet" href="../../dist/output.css" />
+    <link rel="stylesheet" href="../../../dist/output.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.3.4/dist/flowbite.min.css" />
     <!-- favicon -->
-    <link rel="icon" href="../../logo-utb-n_1-removebg-preview.png" type="image/png">
+    <link rel="icon" href="../../../logo-utb-n_1-removebg-preview.png" type="image/png">
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <title>dashboard</title>
+
+    <title>Criteria</title>
 </head>
 
 <body>
@@ -23,14 +25,14 @@
 
                 <nav class="p-4  w-full z-10 flex justify-between">
                     <div class="logo">
-                        <a href="./index.html"><img src="../../logo-utb-n 1.png" height="80px" width="100px" alt="logo" /></a>
+                        <a href="./index.html"><img src="../../../logo-utb-n 1.png" height="80px" width="100px" alt="logo" /></a>
                     </div>
                     <div class="mx-8">
                         <!-- Desktop Header -->
                         <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white z-20" id="nav-content">
                             <ul class="list-reset lg:flex flex-1 items-center px-4 md:px-0 navbar_list" id="list_container">
                                 <li class="mr-6 my-2 md:my-0">
-                                    <a href="./index.html" class="block py-1 md:py-3 pl-1 text-blue-900 list_btn">
+                                    <a href="../index.html" class="block py-1 md:py-3 pl-1 text-blue-900 list_btn">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                     d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
@@ -38,7 +40,7 @@
                                     </a>
                                 </li>
                                 <li class="mr-6 my-2 md:my-0">
-                                    <a href="./facilities.html" class="block py-1 md:py-3 pl-1 align-center text-blue-500 list_btn">
+                                    <a href="../facilities.html" class="block py-1 md:py-3 pl-1 align-center text-blue-500 list_btn">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                     d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
@@ -46,7 +48,7 @@
                                     </a>
                                 </li>
                                 <li class="mr-6 my-2 md:my-0">
-                                    <a href="./districts.html" class="block py-1 md:py-3 pl-1 align-middle text-blue-500 list_btn">
+                                    <a href="../districts.html" class="block py-1 md:py-3 pl-1 align-middle text-blue-500 list_btn">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                     d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
@@ -54,21 +56,21 @@
                                     </a>
                                 </li>
                                 <li class="mr-6 my-2 md:my-0">
-                                    <a href="./users.html" class="block py-1 md:py-3 pl-1 align-middle text-blue-500 list_btn">
+                                    <a href="../users.html" class="block py-1 md:py-3 pl-1 align-middle text-blue-500 list_btn">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                                               </svg><span class="pb-1 md:pb-0 text-sm">USERS</span>
                                     </a>
                                 </li>
                                 <li class="mr-6 my-2 md:my-0">
-                                    <a href="./score.html" class="block py-1 md:py-3 pl-1 align-middle text-blue-500 list_btn">
+                                    <a href="../score.html" class="block py-1 md:py-3 pl-1 align-middle text-blue-500 list_btn">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 13v-1m4 1v-3m4 3V8M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
                                               </svg><span class="pb-1 md:pb-0 text-sm">SCORE SETTINGS</span>
                                     </a>
                                 </li>
                                 <li class="mr-6 my-2 md:my-0">
-                                    <a href="./establishment.html" class="block py-1 md:py-3 pl-1 align-middle text-blue-500  list_btn">
+                                    <a href="../establishment.html" class="block py-1 md:py-3 pl-1 align-middle text-blue-500  list_btn">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                     d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
@@ -88,7 +90,7 @@
                                 <div id="dropdown" class="hidden z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-sky-50">
                                     <ul class="py-1 user_btn_dropdown" aria-labelledby="dropdownButton">
                                         <li>
-                                            <a href="./permissions.html" class="block py-2 px-4 text-sm text-blue-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-blue-500 dark:hover:text-white"><svg
+                                            <a href="../permissions.html" class="block py-2 px-4 text-sm text-blue-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-blue-500 dark:hover:text-white"><svg
                                                         xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
                                                         viewBox="0 0 24 24" stroke="currentColor">
                                                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -99,7 +101,7 @@
                                                     </svg>My Permissions</a>
                                         </li>
                                         <li>
-                                            <a href="./profile.html" class="block py-2 px-4 text-sm text-blue-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-blue-500 dark:hover:text-white">
+                                            <a href="../profile.html" class="block py-2 px-4 text-sm text-blue-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-blue-500 dark:hover:text-white">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                         <path stroke-linecap="round" stroke-linejoin="round"
                                                             stroke-width="2"
@@ -107,7 +109,7 @@
                                                     </svg>View Profile</a>
                                         </li>
                                         <li>
-                                            <a href="../../index.html" class="block py-2 px-4 text-sm text-blue-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-blue-500 dark:hover:text-red"><svg
+                                            <a href="../../../index.html" class="block py-2 px-4 text-sm text-blue-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-blue-500 dark:hover:text-red"><svg
                                                         xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
                                                         viewBox="0 0 24 24" stroke="currentColor">
                                                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -140,7 +142,7 @@
                     <div class="flex justify-center">
                         <ul>
                             <li class="mr-6 my-2 md:my-0">
-                                <a href="./index.html" class="block py-1 md:py-3 pl-1 text-blue-900 list_btn">
+                                <a href="../index.html" class="block py-1 md:py-3 pl-1 text-blue-900 list_btn">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                 d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
@@ -148,7 +150,7 @@
                                 </a>
                             </li>
                             <li class="mr-6 my-2 md:my-0">
-                                <a href="./facilities.html" class="block py-1 md:py-3 pl-1 align-center text-blue-500 list_btn">
+                                <a href="../facilities.html" class="block py-1 md:py-3 pl-1 align-center text-blue-500 list_btn">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                 d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
@@ -156,7 +158,7 @@
                                 </a>
                             </li>
                             <li class="mr-6 my-2 md:my-0">
-                                <a href="./districts.html" class="block py-1 md:py-3 pl-1 align-middle text-blue-500 list_btn">
+                                <a href="../districts.html" class="block py-1 md:py-3 pl-1 align-middle text-blue-500 list_btn">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                 d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
@@ -164,21 +166,21 @@
                                 </a>
                             </li>
                             <li class="mr-6 my-2 md:my-0">
-                                <a href="./users.html" class="block py-1 md:py-3 pl-1 align-middle text-blue-500 list_btn">
+                                <a href="../users.html" class="block py-1 md:py-3 pl-1 align-middle text-blue-500 list_btn">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                                           </svg><span class="pb-1 md:pb-0 text-sm">USERS</span>
                                 </a>
                             </li>
                             <li class="mr-6 my-2 md:my-0">
-                                <a href="./score.html" class="block py-1 md:py-3 pl-1 align-middle text-blue-500 list_btn">
+                                <a href="../score.html" class="block py-1 md:py-3 pl-1 align-middle text-blue-500 list_btn">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 13v-1m4 1v-3m4 3V8M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
                                           </svg><span class="pb-1 md:pb-0 text-sm">SCORE SETTINGS</span>
                                 </a>
                             </li>
                             <li class="mr-6 my-2 md:my-0">
-                                <a href="./establishment.html" class="block py-1 md:py-3 pl-1 align-middle text-blue-500  list_btn">
+                                <a href="../establishment.html" class="block py-1 md:py-3 pl-1 align-middle text-blue-500  list_btn">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                 d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
@@ -186,7 +188,7 @@
                                 </a>
                             </li>
                             <li class="mr-6 my-2 md:my-0">
-                                <a href="./permissions.html" class="block py-1 md:py-3 pl-1 align-middle text-blue-900  list_btn">
+                                <a href="../permissions.html" class="block py-1 md:py-3 pl-1 align-middle text-blue-900  list_btn">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                         <path stroke-linecap="round" stroke-linejoin="round"
                                                             stroke-width="2"
@@ -197,7 +199,7 @@
                                 </a>
                             </li>
                             <li class="mr-6 my-2 md:my-0">
-                                <a href="./profile.html" class="block py-1 md:py-3 pl-1 align-middle  list_btn">
+                                <a href="../profile.html" class="block py-1 md:py-3 pl-1 align-middle text-blue-900  list_btn">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round"
                                             stroke-width="2"
@@ -206,7 +208,7 @@
                                 </a>
                             </li>
                             <li class="mr-6 my-2 md:my-0" style="background:rgb(158, 15, 15);color: white;">
-                                <a href="../../index.html" class="block py-1 md:py-3 pl-1 align-middle text-red-900 list_btn">
+                                <a href="../../../index.html" class="block py-1 md:py-3 pl-1 align-middle text-red-900 list_btn">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round"
                                             stroke-width="2"
@@ -220,247 +222,263 @@
             </div>
             <!-- main body section -->
             <!-- first section -->
-            <div class="mx-8">
-                <div id="head_title">
-                    <h1 class="text-center pt-8 pb-6">Dashboard</h1>
-                </div>
-                <div class="flex flex-wrap">
-                    <div class="w-full md:w-1/2 xl:w-1/3 p-3">
-                        <!--Metric Card-->
-                        <div class="bg-white border-2 border-blue-900 shadow p-2 Metric_card">
-                            <div class="p-6 flex flex-col justify-between items-center">
-                                <div class="border-b-2 border-b-blue-800 text-center" style="width: 200px">
-                                    <h1>LODGES</h1>
-                                </div>
-                                <span class="text-6xl mt-4 font-bold">20</span>
-                                <div class="mt-2">Facilities</div>
-                            </div>
-                        </div>
-                        <!--/Metric Card-->
-                    </div>
-                    <div class="w-full md:w-1/2 xl:w-1/3 p-3">
-                        <!--Metric Card-->
-                        <div class="bg-white border-2 border-blue-900 shadow p-2 Metric_card">
-                            <div class="p-6 flex flex-col justify-between items-center">
-                                <div class="border-b-2 border-b-blue-800 text-center" style="width: 200px">
-                                    <h1>APARTMENTS</h1>
-                                </div>
-                                <span class="text-6xl mt-4 font-bold">10</span>
-                                <div class="mt-2">Facilities</div>
-                            </div>
-                        </div>
-                        <!--/Metric Card-->
-                    </div>
-                    <div class="w-full md:w-1/2 xl:w-1/3 p-3">
-                        <!--Metric Card-->
-                        <div class="bg-white border-2 border-blue-900 shadow p-2 Metric_card">
-                            <div class="p-6 flex flex-col justify-between items-center">
-                                <div class="border-b-2 border-b-blue-800 text-center" style="width: 200px">
-                                    <h1>LODGES</h1>
-                                </div>
-                                <span class="text-6xl mt-4 font-bold">20</span>
-                                <div class="mt-2">Facilities</div>
-                            </div>
-                        </div>
-                        <!--/Metric Card-->
-                    </div>
-                    <div class="w-full md:w-1/2 xl:w-1/3 p-3">
-                        <!--Metric Card-->
-                        <div class="bg-white border-2 border-blue-900 shadow p-2 Metric_card">
-                            <div class="p-6 flex flex-col justify-between items-center">
-                                <div class="border-b-2 border-b-blue-800 text-center" style="width: 200px">
-                                    <h1>MOTELS</h1>
-                                </div>
-                                <span class="text-6xl mt-4 font-bold">12</span>
-                                <div class="mt-2">Facilities</div>
-                            </div>
-                        </div>
-                        <!--/Metric Card-->
-                    </div>
-                    <div class="w-full md:w-1/2 xl:w-1/3 p-3">
-                        <!--Metric Card-->
-                        <div class="bg-white border-2 border-blue-900 shadow p-2 Metric_card">
-                            <div class="p-6 flex flex-col justify-between items-center">
-                                <div class="border-b-2 border-b-blue-800 text-center" style="width: 200px">
-                                    <h1>TENTED CAMPS</h1>
-                                </div>
-                                <span class="text-6xl mt-4 font-bold">7</span>
-                                <div class="mt-2">Facilities</div>
-                            </div>
-                        </div>
-                        <!--/Metric Card-->
-                    </div>
-                    <div class="w-full md:w-1/2 xl:w-1/3 p-3">
-                        <!--Metric Card-->
-                        <div class="bg-white border-2 border-blue-900 shadow p-2 Metric_card">
-                            <div class="p-6 flex flex-col justify-between items-center">
-                                <div class="border-b-2 border-b-blue-800 text-center" style="width: 200px">
-                                    <h1>RESTAURANTS</h1>
-                                </div>
-                                <span class="text-6xl mt-4 font-bold">18</span>
-                                <div class="mt-2">Facilities</div>
-                            </div>
-                        </div>
-                        <!--/Metric Card-->
+            <div class="mx-8" id="users">
+                <div class="pt-8 pb-6">
+                    <div id="head_title" class="w-full md:w-1/2 xl:w-1/3">
+                        <h1>Classification 2 for Agip Motel, Villas, Cottages and serviced apartments</h1>
+                        <small>Date of inspection: 2022-02-05</small>
                     </div>
                 </div>
-            </div>
-            <!-- second section -->
-            <div class="mx-8">
-                <div id="head_title">
-                    <h1 class="text-center pt-8 pb-6">Star Grading</h1>
+                <div class="flex justify-start flex-wrap">
+                    <a href="#" class="p-2">
+                        <button type="button" style="display:flex; align-items:end;" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                            type="button
+                           " data-modal-toggle="authentication-modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd" />
+                              </svg>Add Assessors</button>
+                    </a>
+                    <a href="#" class="p-2">
+                        <button type="button" style="display:flex; align-items:end;" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                            type="button
+                           " data-modal-toggle="authentication-modal">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                            <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                          </svg>View Assessors</button>
+                    </a>
+                    <a href="#" class="p-2">
+                        <button type="button" style="display:flex; align-items:end;" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                            type="button
+                           " data-modal-toggle="authentication-modal">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                            <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                          </svg>Assignment summary</button>
+                    </a>
+                    <a href="#" class="p-2">
+                        <button type="button" style="display:flex; align-items:end;" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                            type="button
+                           " data-modal-toggle="authentication-modal">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z" />
+                            <path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd" />
+                          </svg>Edit classification</button>
+                    </a>
+                    <a href="#" class="p-2">
+                        <button type="button" style="display:flex; align-items:end;" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                            type="button
+                           " data-modal-toggle="authentication-modal">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                          </svg>Upload files</button>
+                    </a>
+                    <a href="#" class="p-2">
+                        <button type="button" style="display:flex; align-items:end;" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                            type="button
+                           " data-modal-toggle="authentication-modal">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                            <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                          </svg>View Documents</button>
+                    </a>
+                    <a href="#" class="p-2">
+                        <button type="button" style="display:flex; align-items:end;" class="block text-white bg-blue-400 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-600 dark:focus:ring-blue-800"
+                            type="button
+                           " data-modal-toggle="authentication-modal">
+                          Essential Marks</button>
+                    </a>
+                    <a href="#" class="p-2">
+                        <button type="button" style="display:flex; align-items:end;" class="block text-white bg-blue-400 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-600 dark:focus:ring-blue-800"
+                            type="button
+                           " data-modal-toggle="authentication-modal">
+                           Non-Essential Marks</button>
+                    </a>
                 </div>
-                <div class="bg-white overflow-auto rounded-lg">
-                    <table class="min-w-full bg-white border border-blue-800 table_body">
-                        <thead class="bg-blue-800 text-white">
-                            <tr class="table_head">
-                                <th class=" text-left py-3 px-4 uppercase font-semibold text-sm">
-                                    NAME
-                                </th>
-                                <th class=" text-center py-3 px-4 uppercase font-semibold text-sm">
-                                    ONE STAR
-                                </th>
-                                <th class="text-center py-3 px-4 uppercase font-semibold text-sm">
-                                    TWO STAR
-                                </th>
-                                <th class="text-center py-3 px-4 uppercase font-semibold text-sm">
-                                    THREE STAR
-                                </th>
-                                <th class="text-center py-3 px-4 uppercase font-semibold text-sm">
-                                    FOUR STAR
-                                </th>
-                                <th class="text-center py-3 px-4 uppercase font-semibold text-sm">
-                                    FIVE STAR
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class=" text-left py-3 px-4">LODGES</td>
-                                <td class=" text-center">0</td>
-                                <td class="text-center">
-                                    <a class="hover:text-blue-500" href="tel:622322662">0</a>
-                                </td>
-                                <td class="text-center">
-                                    <a class="hover:text-blue-500">0</a>
-                                </td>
-                                <td class="text-center">
-                                    <a class="hover:text-blue-500">0</a>
-                                </td>
-                                <td class="text-center ">
-                                    <a class="hover:text-blue-500">0</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class=" text-left py-3 px-4">VILLAS</td>
-                                <td class=" text-center">0</td>
-                                <td class="text-center">
-                                    <a class="hover:text-blue-500" href="tel:622322662">0</a>
-                                </td>
-                                <td class="text-center">
-                                    <a class="hover:text-blue-500">0</a>
-                                </td>
-                                <td class="text-center">
-                                    <a class="hover:text-blue-500">0</a>
-                                </td>
-                                <td class="text-center ">
-                                    <a class="hover:text-blue-500">0</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class=" text-left py-3 px-4">TOWN HOTELS</td>
-                                <td class=" text-center">0</td>
-                                <td class="text-center">
-                                    <a class="hover:text-blue-500" href="tel:622322662">0</a>
-                                </td>
-                                <td class="text-center">
-                                    <a class="hover:text-blue-500">0</a>
-                                </td>
-                                <td class="text-center">
-                                    <a class="hover:text-blue-500">0</a>
-                                </td>
-                                <td class="text-center ">
-                                    <a class="hover:text-blue-500">0</a>
-                                </td>
-                            </tr>
+                <div class="p-6 border-2 border-blue-800 rounded-lg">
+                    <div>
+                        <h1 style="font-size: 25px;">MARKS</h1>
+                    </div>
+                    <div>
+                        <ol type="1" class="list-decimal orderedlist p-6">
 
-                        </tbody>
-                    </table>
+                            <li>
+
+
+                                <a href="/single_add_assessment_marks/52/2/essential">Occupational Permit (essential)</a>
+                                <hr>
+
+                            </li>
+
+                            <li>
+
+
+                                <a href="/single_add_assessment_marks/53/2/essential">Valid Operating license (essential)</a>
+                                <hr>
+
+                            </li>
+
+                            <li>
+
+
+                                <a href="/single_add_assessment_marks/54/2/essential">Drainage (essential)</a>
+                                <hr>
+
+                            </li>
+
+                            <li>
+
+
+                                <a href="/single_add_assessment_marks/55/2/essential">EIA/Environmental Audit reports (essential)</a>
+                                <hr>
+
+                            </li>
+
+                            <li>
+
+
+                                <a href="/single_add_assessment_marks/8/2/non-essential">LOCATION (non-essential)</a>
+                                <hr>
+
+                            </li>
+
+                            <li>
+
+
+                                <a href="/single_add_assessment_marks/9/2/non-essential">BUILDING (non-essential)</a>
+                                <hr>
+
+                            </li>
+
+                            <li>
+
+
+                                <a href="/single_add_assessment_marks/11/2/non-essential">RECEPTION AREA (non-essential)</a>
+                                <hr>
+
+                            </li>
+
+                            <li>
+
+
+                                <a href="/single_add_assessment_marks/12/2/non-essential">RECEPTION AREA (non-essential)</a>
+                                <hr>
+
+                            </li>
+
+                            <li>
+
+
+                                <a href="/single_add_assessment_marks/13/2/non-essential">LIVING ROOM/LOBBY/LOUNGE (non-essential)</a>
+                                <hr>
+
+                            </li>
+
+                            <li>
+
+
+                                <a href="/single_add_assessment_marks/15/2/non-essential">KITCHENETTE (non-essential)</a>
+                                <hr>
+
+                            </li>
+
+                            <li>
+
+
+                                <a href="/single_add_assessment_marks/114/2/non-essential">BATHROOMS (non-essential)</a>
+                                <hr>
+
+                            </li>
+
+                            <li>
+
+
+                                <a href="/single_add_assessment_marks/123/2/non-essential">HYGIENE AND SANITATION (non-essential)</a>
+                                <hr>
+
+                            </li>
+
+                            <li>
+
+
+                                <a href="/single_add_assessment_marks/124/2/non-essential">SAFETY AND SECURITY (non-essential)</a>
+                                <hr>
+
+                            </li>
+
+                            <li>
+
+
+                                <a href="/single_add_assessment_marks/129/2/non-essential">SUNDRY SERVICES (non-essential)</a>
+                                <hr>
+
+                            </li>
+
+                            <li>
+
+
+                                <a href="/single_add_assessment_marks/131/2/non-essential">HUMAN RESOURCE (non-essential)</a>
+                                <hr>
+
+                            </li>
+
+                            <li>
+
+
+                                <a href="/single_add_assessment_marks/132/2/non-essential">GENERAL (non-essential)</a>
+                                <hr>
+
+                            </li>
+
+                        </ol>
+                    </div>
                 </div>
             </div>
-            <!-- third section -->
-            <div class="mx-8 ">
-                <div id="head_title ">
-                    <h1 class="text-center pt-8 pb-6 ">Pending Grading</h1>
-                </div>
-                <div class="bg-white overflow-auto rounded-lg ">
-                    <table class="min-w-full bg-white border border-blue-800 table_body ">
-                        <thead class="bg-blue-800 text-white ">
-                            <tr class="table_head ">
-                                <th class=" text-left py-3 px-4 uppercase font-semibold text-sm ">
-                                    FACILITY
-                                </th>
-                                <th class=" text-left py-3 px-4 uppercase font-semibold text-sm ">
-                                    INSPECTION DATE
-                                </th>
-                                <th class=" text-left py-3 px-4 uppercase font-semibold text-sm ">
-                                    STATUS
-                                </th>
-                                <th class="text-left py-3 px-4 uppercase font-semibold text-sm ">
-                                    DETAILS
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class=" text-left py-3 px-4 ">NEW JERUZALEM HOTEL</td>
-                                <td class=" text-left py-3 px-4 ">2022-02-01</td>
-                                <td class=" text-left py-3 px-4 " style="color: red; ">pending</td>
-                                <td class="text-left py-3 px-4 ">
-                                    <a href="./edit/classification_edit.html ">
-                                        <button type="button " class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm p-2 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ">
-                                            View Details
-                                        </button>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class=" text-left py-3 px-4 ">AGIP MOTEL</td>
-                                <td class=" text-left py-3 px-4 ">2022-02-01</td>
-                                <td class=" text-left py-3 px-4 " style="color: red; ">pending</td>
-                                <td class="text-left py-3 px-4 ">
-                                    <a href="./edit/classification_edit.html ">
-                                        <button type="button " class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm p-2 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ">
-                                            View Details
-                                        </button>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class=" text-left py-3 px-4 ">BIG TIME</td>
-                                <td class=" text-left py-3 px-4 ">2022-02-01</td>
-                                <td class=" text-left py-3 px-4 " style="color: red; ">pending</td>
-                                <td class="text-left py-3 px-4 ">
-                                    <a href="./edit/classification_edit.html ">
-                                        <button type="button " class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm p-2 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ">
-                                            View Details
-                                        </button>
-                                    </a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <!-- Main modal -->
+            <div id="authentication-modal" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed right-0 left-0 top-4 z-50 justify-center items-center h-modal md:h-full md:inset-0">
+                <div class="relative px-4 w-full max-w-md h-full md:h-auto">
+                    <!-- Modal content -->
+                    <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                        <div class="flex justify-end p-2">
+                            <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" data-modal-toggle="authentication-modal">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
+                </button>
+                        </div>
+                        <form class="px-6 pb-4 space-y-6 lg:px-8 sm:pb-6 xl:pb-8" action="#">
+                            <h3 class="text-xl font-medium text-gray-900 dark:text-white">Create a criteria</h3>
+                            <div>
+                                <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Criteria name</label>
+                                <input type="text" name="name" id="email" class="bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="name@company.com"
+                                    required>
+                            </div>
+                            <div>
+                                <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Select status</label>
+                                <select id="countries " class="bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2  dark:border-gray-600 dark:placeholder-gray-400
+                                dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 ">
+                                <option value="Lodges">Lodges</option>
+                                <option value="Motels">Motels</option>
+                                <option value="Restaurants">Restaurants</option>
+                                <option value="Tented Camps">Tented Camps</option>
+                                <option value="Town Hotels">Town Hotels</option>
+                                <option value="Vacation Hotels">Vacation Hotels</option>
+                                <option value="Villas, Cottages and serviced apartments">Villas, Cottages and serviced apartments</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">save</button>
+
+                        </form>
+                    </div>
                 </div>
             </div>
         </main>
-        <!-- footer section -->
         <footer class="text-center content-center grid ">
             <small class="text-white ">© 2022 - UTB E-GRADING SYSTEM | All rights Reserved</small>
         </footer>
     </div>
     <!-- js links -->
     <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js "></script>
-    <script src="../../dist/js/main.js "></script>
+    <script src="../../../dist/js/main.js"></script>
+
 </body>
 
 </html>
