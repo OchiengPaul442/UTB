@@ -249,12 +249,19 @@ footer {
 }
 
 
+/* criteria section */
+
+.orderedlist li {
+    margin: 25px 0;
+}
+
+
 /* mobile view  */
 
 @media (min-width: 780px) {
-    /* .exp2 {
+    .exp2 {
         width: 300px;
-    } */
+    }
 }
 
 @media (max-width: 800px) {
