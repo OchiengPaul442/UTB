@@ -8,17 +8,6 @@
     box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: bolder;
-    color: #136eaf;
-    font-family: 'Spartan', sans-serif;
-}
-
 body,
 html {
     color: #136eaf;
@@ -50,68 +39,6 @@ footer {
     width: 100%;
     height: 70px;
     background-color: #1e3a8a;
-}
-
-
-/* navbar */
-
-
-/* logo */
-
-.logo a img {
-    width: 100%;
-    height: 60px;
-}
-
-
-/* Style the buttons */
-
-.list_btn {
-    transition: all .1s;
-    border-bottom: 2px solid white;
-}
-
-.active,
-.list_btn:hover {
-    border-bottom: 2px solid #1e3a8a;
-    color: rgb(71, 71, 71);
-}
-
-.navbar_list li a {
-    display: inline-flex;
-    align-items: end;
-}
-
-.navbar_list li a svg {
-    margin-right: 5px;
-}
-
-.user_btn {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 19, 183, 0.4);
-}
-
-#logout_icon {
-    color: red;
-}
-
-.user_btn_dropdown li:last-child {
-    color: red;
-}
-
-.user_btn_dropdown li a svg {
-    margin-right: 5px;
-}
-
-.user_btn_dropdown li a {
-    display: flex;
-    align-items: end;
 }
 
 
