@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <!-- head section -->
     <?php include_once './partials/head.php'; ?>
     <title>Dashboard</title>
 </head>
