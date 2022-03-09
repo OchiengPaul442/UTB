@@ -28,3 +28,8 @@ function goToEstablishmentType() {
 function goToUsers() {
     location.href = "./users.php";
 }
+
+// persmissions
+function gotoMypermissions() {
+    location.href = "./permissions.php";
+}

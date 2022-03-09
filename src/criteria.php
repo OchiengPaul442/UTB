@@ -7,7 +7,7 @@
     <title>Criteria</title>
 </head>
 
-<body>
+<body >
     <section class="main_con">
         <!-- nav bar -->
         <?php include_once './partials/navbar.php'; ?>

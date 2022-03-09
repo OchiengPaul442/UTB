@@ -2,27 +2,27 @@
 <html lang="en">
 
 <head>
-<?php include_once './partials/head.php'; ?>
+    <?php include_once './partials/head.php'; ?>
 
-    <title>Permissions for admins</title>
+    <title>Manage permissions</title>
 </head>
 
-<body>
+<body >
     <section class="main_con">
         <!-- nav bar -->
         <?php include_once './partials/navbar.php'; ?>
 
         <!-- main body section -->
-        <main class="w-full overflow-y-hidden">
-            <div class="pt-8 mx-8">
+        <main class="p-10 space-y-10">
+        <div class="pt-8 mx-8 mb-4">
                 <div id="head_title">
                     <h2 class="text-5xl font-spartan tracking-tight font-extrabold text-blue-800 sm:text-5xl md:text-6xl ">
-                        Permissions for Admin user
+                        Manage Permissions for Admin user
                     </h2>
                 </div>
             </div>
-            <div style="margin: 0 40px;">
-                <div class="flex flex-wrap  p-4 border-2 border-blue-800 rounded-lg">
+            <div>
+                <div class="flex flex-wrap  p-4 border-2 border-blue-800 rounded-lg" style="background-color: white;">
                     <div class="w-full md:w-1/2">
                         <div style="position:relative; width: 100%; padding: 20px; margin: 20px 0;">
                             <div>
@@ -253,8 +253,8 @@
             </div>
         </main>
         <!-- footer section -->
-        <footer class="text-center content-center grid">
-            <small class="text-white">© 2022 - UTB E-GRADING SYSTEM | All rights Reserved</small>
+        <footer class="text-center content-center grid ">
+            <small class="text-white ">© 2022 - UTB E-GRADING SYSTEM | All rights Reserved</small>
         </footer>
     </section>
     <!-- js links -->

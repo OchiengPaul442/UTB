@@ -2,18 +2,18 @@
 <html lang="en">
 
 <head>
-<?php include_once './partials/head.php'; ?>
+    <?php include_once './partials/head.php'; ?>
 
     <title>upload document for New Jeruzalem Hotel</title>
 </head>
 
-<body>
+<body >
     <section class="main_con">
         <!-- nav bar -->
         <?php include_once './partials/navbar.php'; ?>
 
         <!-- main body section -->
-        <main class="w-full overflow-y-hidden">
+        <main class="p-10 space-y-10">
             <!-- first section -->
             <div class="mx-8">
                 <div class="flex pt-8 mb-6">
@@ -24,8 +24,8 @@
                     </div>
                 </div>
             </div>
-            <div class="mx-8 pt-8">
-                <form class="border-2 border-blue-800 rounded-lg p-6">
+            <div>
+                <form class="border-2 border-blue-800 rounded-lg p-6" style="background-color: white;">
                     <div class="mb-6 ">
                         <label for="Longitude " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Document name</label>
                         <input type="text " id="Longitude " class="shadow-sm bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2  dark:border-gray-600
@@ -38,8 +38,7 @@ dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:bo
                     </div>
                     <div class="mb-6">
                         <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300" for="user_avatar">Select the file from your device</label>
-                        <input class="block w-full text-sm text-gray-900 bg-gray-200 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none focus:border-transparent dark:border-gray-600 dark:placeholder-gray-400" aria-describedby="user_avatar_help"
-                            id="user_avatar" type="file">
+                        <input class="block w-full text-sm text-gray-900 bg-gray-200 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none focus:border-transparent dark:border-gray-600 dark:placeholder-gray-400" aria-describedby="user_avatar_help" id="user_avatar" type="file">
                     </div>
                     <div style="background-color: rgba(0, 0, 255, 0.459);width: 100%;height: 2px;"></div>
                     <div class="pb-6 pt-6">

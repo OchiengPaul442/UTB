@@ -2,8 +2,7 @@
 <html lang="en">
 
 <head>
-    <!-- head section -->
-    <?php include_once './partials/head.php'; ?>
+<?php include_once './partials/head.php'; ?>
     <title>Dashboard</title>
 </head>
 
@@ -351,9 +350,11 @@
 
                                             <td class="px-6 py-4 text-green whitespace-nowrap text-sm ">
                                                 <!-- on click, call js code that calls the php file to change status -->
-                                                <button class="justify-center w-full py-2 px-4 border border-transparent text-sm rounded-md text-red hover:bg-blue-800 hover:text-white bg-amber-400 text-blue-800 font-semibold transition-colors duration-300 ">
-                                                    View Details
-                                                </button>
+                                                <a href="./details.php">
+                                                    <button class="justify-center w-full py-2 px-4 border border-transparent text-sm rounded-md text-red hover:bg-blue-800 hover:text-white bg-amber-400 text-blue-800 font-semibold transition-colors duration-300 ">
+                                                        View Details
+                                                    </button>
+                                                </a>
 
                                             </td>
 
@@ -377,9 +378,11 @@
 
                                             <td class="px-6 py-4 text-green whitespace-nowrap text-sm ">
                                                 <!-- on click, call js code that calls the php file to change status -->
-                                                <button class="justify-center w-full py-2 px-4 border border-transparent text-sm rounded-md text-red hover:bg-blue-800 hover:text-white bg-amber-400 text-blue-800 font-semibold transition-colors duration-300 ">
-                                                    View Details
-                                                </button>
+                                                <a href="./details.php">
+                                                    <button class="justify-center w-full py-2 px-4 border border-transparent text-sm rounded-md text-red hover:bg-blue-800 hover:text-white bg-amber-400 text-blue-800 font-semibold transition-colors duration-300 ">
+                                                        View Details
+                                                    </button>
+                                                </a>
 
                                             </td>
 
@@ -404,9 +407,11 @@
 
                                             <td class="px-6 py-4 text-green whitespace-nowrap text-sm ">
                                                 <!-- on click, call js code that calls the php file to change status -->
-                                                <button class="justify-center w-full py-2 px-4 border border-transparent text-sm rounded-md text-red hover:bg-blue-800 hover:text-white bg-amber-400 text-blue-800 font-semibold transition-colors duration-300 ">
-                                                    View Details
-                                                </button>
+                                                <a href="./details.php">
+                                                    <button class="justify-center w-full py-2 px-4 border border-transparent text-sm rounded-md text-red hover:bg-blue-800 hover:text-white bg-amber-400 text-blue-800 font-semibold transition-colors duration-300 ">
+                                                        View Details
+                                                    </button>
+                                                </a>
 
                                             </td>
 
@@ -457,9 +462,11 @@
 
                                             <td class="px-6 py-4 text-green whitespace-nowrap text-sm ">
                                                 <!-- on click, call js code that calls the php file to change status -->
-                                                <button class="justify-center w-full py-2 px-4 border border-transparent text-sm rounded-md text-red hover:bg-blue-800 hover:text-white bg-amber-400 text-blue-800 font-semibold transition-colors duration-300 ">
-                                                    View Details
-                                                </button>
+                                                <a href="./details.php">
+                                                    <button class="justify-center w-full py-2 px-4 border border-transparent text-sm rounded-md text-red hover:bg-blue-800 hover:text-white bg-amber-400 text-blue-800 font-semibold transition-colors duration-300 ">
+                                                        View Details
+                                                    </button>
+                                                </a>
 
                                             </td>
 
@@ -475,7 +482,7 @@
             </div>
         </main>
         <!-- footer section -->
-        <footer class="text-center content-center grid ">
+        <footer class="text-center content-center grid">
             <small class="text-white ">© 2022 - UTB E-GRADING SYSTEM | All rights Reserved</small>
         </footer>
     </section>

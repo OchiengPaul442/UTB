@@ -3,11 +3,10 @@
 
 <head>
     <?php include_once './partials/head.php'; ?>
-
     <title>Edits</title>
 </head>
 
-<body>
+<body >
     <section class="main_con">
         <!-- nav bar -->
         <?php include_once './partials/navbar.php'; ?>
@@ -18,165 +17,162 @@
             <section>
                 <div class=" mx-8 " id="score ">
                     <div class="pt-8 pb-6 ">
-                        <div id="head_title " class="w-full md:w-1/2 xl:w-1/3 ">
-
+                        <div>
                             <h2 class="text-5xl font-spartan tracking-tight font-extrabold text-blue-800 sm:text-5xl md:text-6xl ">
                                 Set classification scores
                             </h2>
                         </div>
                     </div>
-
-                    <div>
-                        <form action="# " class="border-2 border-blue-800 rounded-lg ">
-                            <div class="px-6 pt-6 ">
-                                <small>The Maximum percentage value is determined by the next star minimum value, it should be less by 1</small>
+                    <!-- edit score form section -->
+                    <form action="#" class="border-2 border-blue-800 rounded-lg" style="background-color: white;">
+                        <div class="px-6 pt-6">
+                            <small>The Maximum percentage value is determined by the next star minimum value, it should be less by 1</small>
+                        </div>
+                        <div class="p-6 w-full">
+                            <div class="mb-6 ">
+                                <label for="countries " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400 ">Establishment type</label>
+                                <select id="countries " class="bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2  dark:border-gray-600 dark:placeholder-gray-400
+                                dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 ">
+                                    <option value="Lodges">Lodges</option>
+                                    <option value="Motels">Motels</option>
+                                    <option value="Restaurants">Restaurants</option>
+                                    <option value="Tented Camps">Tented Camps</option>
+                                    <option value="Town Hotels">Town Hotels</option>
+                                    <option value="Vacation Hotels">Vacation Hotels</option>
+                                    <option value="Villas, Cottages and serviced apartments">Villas, Cottages and serviced apartments</option>
+                                </select>
                             </div>
-                            <div class="p-6 w-full ">
-                                <div class="mb-6 ">
-                                    <label for="countries " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400 ">Establishment type</label>
-                                    <select id="countries " class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400
-            dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 ">
-                                        <option value="Lodges ">Lodges</option>
-                                        <option value="Motels ">Motels</option>
-                                        <option value="Restaurants ">Restaurants</option>
-                                        <option value="Tented Camps ">Tented Camps</option>
-                                        <option value="Town Hotels ">Town Hotels</option>
-                                        <option value="Vacation Hotels ">Vacation Hotels</option>
-                                        <option value="Villas, Cottages and serviced apartments ">Villas, Cottages and serviced apartments</option>
-                                    </select>
+
+                            <div style="background-color: rgba(0, 0, 255, 0.459);width: 100%;height: 2px; " class="mb-6"></div>
+
+                            <div class="">
+                                <div class="mb-6 p-2">
+                                    <label for="OneStarmin " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">One Star Minimum percentage</label>
+                                    <input type="number" id="OneStarmin " class="shadow-sm bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2  dark:border-gray-600 dark:placeholder-gray-400
+                                dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
                                 </div>
-
-                                <div style="background-color: rgba(0, 0, 255, 0.459);width: 100%;height: 2px; " class="mb-6 "></div>
-
-                                <div class="flex flex-wrap three_column_sec ">
-                                    <div class="mb-6 md:w-1/2 xl:w-1/3 p-2 ">
-                                        <label for="OneStarmin " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">One Star Minimum percentage</label>
-                                        <input type="number " id="OneStarmin " class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600
-            dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
-                                    </div>
-                                    <div class="mb-6 md:w-1/2 xl:w-1/3 p-2 ">
-                                        <label for="OneStarmax " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">One Star Maximum percentage</label>
-                                        <input type="number " id="OneStarmax " class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600
-            dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
-                                    </div>
-                                    <div class="mb-6 md:w-1/2 xl:w-1/3 p-2 ">
-                                        <label for="OneStartotal " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">One Star Posible total</label>
-                                        <input type="number " id="OneStartotal " class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600
-            dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
-                                    </div>
+                                <div class="mb-6  p-2">
+                                    <label for="OneStarmax " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">One Star Maximum percentage</label>
+                                    <input type="number" id="OneStarmax " class="shadow-sm bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2  dark:border-gray-600 dark:placeholder-gray-400
+                                dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
                                 </div>
-
-                                <div style="background-color: rgba(0, 0, 255, 0.459);width: 100%;height: 2px; " class="mb-6 "></div>
-
-                                <div class="flex flex-wrap three_column_sec ">
-                                    <div class="mb-6 md:w-1/2 xl:w-1/3 p-2 ">
-                                        <label for="twoStarmin " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Two Star Minimum percentage</label>
-                                        <input type="number " id="twoStarmin " class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600
-            dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
-                                    </div>
-                                    <div class="mb-6 md:w-1/2 xl:w-1/3 p-2 ">
-                                        <label for="twoStarmax " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Two Star Maximum percentage</label>
-                                        <input type="number " id="twoStarmax " class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600
-            dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
-                                    </div>
-                                    <div class="mb-6 md:w-1/2 xl:w-1/3 p-2 ">
-                                        <label for="twoStartotal " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Two Star Posible total</label>
-                                        <input type="number " id="twoStartotal " class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600
-            dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
-                                    </div>
-                                </div>
-
-                                <div style="background-color: rgba(0, 0, 255, 0.459);width: 100%;height: 2px; " class="mb-6 "></div>
-
-                                <div class="flex w-full flex-wrap three_column_sec ">
-                                    <div class="mb-6 md:w-1/2 xl:w-1/3 p-2 ">
-                                        <label for="ThreeStarmin " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Three Star Minimum percentage</label>
-                                        <input type="number " id="ThreeStarmin " class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600
-            dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
-                                    </div>
-                                    <div class="mb-6 md:w-1/2 xl:w-1/3 p-2 ">
-                                        <label for="ThreeStarmax " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Three Star Maximum percentage</label>
-                                        <input type="number " id="ThreeStarmax " class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600
-            dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
-                                    </div>
-                                    <div class="mb-6 md:w-1/2 xl:w-1/3 p-2 ">
-                                        <label for="ThreeStarsection2 " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Three Star section Minimum percentage</label>
-                                        <input type="number " id="ThreeStarsection2 " class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600
-            dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
-                                    </div>
-                                    <div class="mb-6 md:w-1/2 xl:w-1/3 p-2 ">
-                                        <label for="ThreeStarsection3 " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Three Star section Maximum percentage</label>
-                                        <input type="number " id="ThreeStarsection3 " class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600
-            dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
-                                    </div>
-                                    <div class="mb-6 md:w-1/2 xl:w-1/3 p-2 ">
-                                        <label for="ThreeStarsectiontotal " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Three Star Posible total</label>
-                                        <input type="number " id="ThreeStarsectiontotal " class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600
-            dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
-                                    </div>
-                                </div>
-                                <div style="background-color: rgba(0, 0, 255, 0.459);width: 100%;height: 2px; " class="mb-6 "></div>
-                                <div class="flex w-full flex-wrap three_column_sec ">
-                                    <div class="mb-6 md:w-1/2 xl:w-1/3 p-2 ">
-                                        <label for="fourStarmin " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Four Star Minimum percentage</label>
-                                        <input type="number " id="fourStarmin " class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600
-            dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
-                                    </div>
-                                    <div class="mb-6 md:w-1/2 xl:w-1/3 p-2 ">
-                                        <label for="fourStarmax " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Four Star Maximum percentage</label>
-                                        <input type="number " id="fourStarmax " class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600
-            dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
-                                    </div>
-                                    <div class="mb-6 md:w-1/2 xl:w-1/3 p-2 ">
-                                        <label for="fourStarsection2 " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Four Star section Minimum percentage</label>
-                                        <input type="number " id="fourStarsection2 " class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600
-            dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
-                                    </div>
-                                    <div class="mb-6 md:w-1/2 xl:w-1/3 p-2 ">
-                                        <label for="fourStarsection3 " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Four Star section Maximum percentage</label>
-                                        <input type="number " id="fourStarsection3 " class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600
-            dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
-                                    </div>
-                                    <div class="mb-6 md:w-1/2 xl:w-1/3 p-2 ">
-                                        <label for="fourStarsectiontotal " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Four Star Posible total</label>
-                                        <input type="number " id="fourStarsectiontotal " class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600
-            dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
-                                    </div>
-                                </div>
-                                <div style="background-color: rgba(0, 0, 255, 0.459);width: 100%;height: 2px; " class="mb-6 "></div>
-                                <div class="flex w-full flex-wrap three_column_sec ">
-                                    <div class="mb-6 md:w-1/2 xl:w-1/3 p-2 ">
-                                        <label for="fiveStarmin " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Five Star Minimum percentage</label>
-                                        <input type="number " id="fiveStarmin " class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600
-            dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
-                                    </div>
-                                    <div class="mb-6 md:w-1/2 xl:w-1/3 p-2 ">
-                                        <label for="fiveStarmax " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Five Star Maximum percentage</label>
-                                        <input type="number " id="fiveStarmax " class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600
-            dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
-                                    </div>
-                                    <div class="mb-6 md:w-1/2 xl:w-1/3 p-2 ">
-                                        <label for="fiveStarsection2 " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Five Star section Minimum percentage</label>
-                                        <input type="number " id="fiveStarsection2 " class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600
-            dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
-                                    </div>
-                                    <div class="mb-6 md:w-1/2 xl:w-1/3 p-2 ">
-                                        <label for="fiveStarsection3 " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Five Star section Maximum percentage</label>
-                                        <input type="number " id="fiveStarsection3 " class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600
-            dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
-                                    </div>
-                                    <div class="mb-6 md:w-1/2 xl:w-1/3 p-2 ">
-                                        <label for="fiveStarsectiontotal " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Five Star Posible total</label>
-                                        <input type="number " id="fiveStarsectiontotal " class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600
-            dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
-                                    </div>
+                                <div class="mb-6  p-2">
+                                    <label for="OneStartotal " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">One Star Posible total</label>
+                                    <input type="number" id="OneStartotal " class="shadow-sm bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2  dark:border-gray-600 dark:placeholder-gray-400
+                                dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
                                 </div>
                             </div>
-                            <div class="px-6 pb-6 ">
-                                <button type=" submit " class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ">Save changes</button>
+
+                            <div style="background-color: rgba(0, 0, 255, 0.459);width: 100%;height: 2px; " class="mb-6"></div>
+
+                            <div class="">
+                                <div class="mb-6 p-2">
+                                    <label for="twoStarmin " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Two Star Minimum percentage</label>
+                                    <input type="number" id="twoStarmin " class="shadow-sm bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2  dark:border-gray-600 dark:placeholder-gray-400
+                                dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
+                                </div>
+                                <div class="mb-6  p-2">
+                                    <label for="twoStarmax " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Two Star Maximum percentage</label>
+                                    <input type="number" id="twoStarmax " class="shadow-sm bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2  dark:border-gray-600 dark:placeholder-gray-400
+                                dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
+                                </div>
+                                <div class="mb-6  p-2">
+                                    <label for="twoStartotal " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Two Star Posible total</label>
+                                    <input type="number" id="twoStartotal " class="shadow-sm bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2  dark:border-gray-600 dark:placeholder-gray-400
+                                dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
+                                </div>
                             </div>
-                        </form>
-                    </div>
+
+                            <div style="background-color: rgba(0, 0, 255, 0.459);width: 100%;height: 2px; " class="mb-6"></div>
+
+                            <div class="">
+                                <div class="mb-6 p-2">
+                                    <label for="ThreeStarmin " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Three Star Minimum percentage</label>
+                                    <input type="number" id="ThreeStarmin " class="shadow-sm bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2  dark:border-gray-600 dark:placeholder-gray-400
+                                dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
+                                </div>
+                                <div class="mb-6  p-2">
+                                    <label for="ThreeStarmax " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Three Star Maximum percentage</label>
+                                    <input type="number" id="ThreeStarmax " class="shadow-sm bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2  dark:border-gray-600 dark:placeholder-gray-400
+                                dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
+                                </div>
+                                <div class="mb-6 p-2">
+                                    <label for="ThreeStarsection2 " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Three Star section Minimum percentage</label>
+                                    <input type="number" id="ThreeStarsection2 " class="shadow-sm bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2  dark:border-gray-600 dark:placeholder-gray-400
+                                dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
+                                </div>
+                                <div class="mb-6 p-2">
+                                    <label for="ThreeStarsection3 " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Three Star section Maximum percentage</label>
+                                    <input type="number" id="ThreeStarsection3" class="shadow-sm bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2  dark:border-gray-600 dark:placeholder-gray-400
+                                dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
+                                </div>
+                                <div class="mb-6 p-2">
+                                    <label for="ThreeStarsectiontotal " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Three Star Posible total</label>
+                                    <input type="number" id="ThreeStarsectiontotal " class="shadow-sm bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2  dark:border-gray-600 dark:placeholder-gray-400
+                                dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
+                                </div>
+                            </div>
+                            <div style="background-color: rgba(0, 0, 255, 0.459);width: 100%;height: 2px; " class="mb-6"></div>
+                            <div class="">
+                                <div class="mb-6 p-2">
+                                    <label for="fourStarmin " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Four Star Minimum percentage</label>
+                                    <input type="number" id="fourStarmin " class="shadow-sm bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2  dark:border-gray-600 dark:placeholder-gray-400
+                                dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
+                                </div>
+                                <div class="mb-6  p-2">
+                                    <label for="fourStarmax " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Four Star Maximum percentage</label>
+                                    <input type="number" id="fourStarmax " class="shadow-sm bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2  dark:border-gray-600 dark:placeholder-gray-400
+                                dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
+                                </div>
+                                <div class="mb-6 p-2">
+                                    <label for="fourStarsection2 " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Four Star section Minimum percentage</label>
+                                    <input type="number" id="fourStarsection2 " class="shadow-sm bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2  dark:border-gray-600 dark:placeholder-gray-400
+                                dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
+                                </div>
+                                <div class="mb-6 p-2">
+                                    <label for="fourStarsection3 " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Four Star section Maximum percentage</label>
+                                    <input type="number" id="fourStarsection3" class="shadow-sm bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2  dark:border-gray-600 dark:placeholder-gray-400
+                                dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
+                                </div>
+                                <div class="mb-6 p-2">
+                                    <label for="fourStarsectiontotal " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Four Star Posible total</label>
+                                    <input type="number" id="fourStarsectiontotal " class="shadow-sm bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2  dark:border-gray-600 dark:placeholder-gray-400
+                                dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
+                                </div>
+                            </div>
+                            <div style="background-color: rgba(0, 0, 255, 0.459);width: 100%;height: 2px; " class="mb-6"></div>
+                            <div class="">
+                                <div class="mb-6 p-2">
+                                    <label for="fiveStarmin " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Five Star Minimum percentage</label>
+                                    <input type="number" id="fiveStarmin " class="shadow-sm bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2  dark:border-gray-600 dark:placeholder-gray-400
+                                dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
+                                </div>
+                                <div class="mb-6  p-2">
+                                    <label for="fiveStarmax " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Five Star Maximum percentage</label>
+                                    <input type="number" id="fiveStarmax " class="shadow-sm bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2  dark:border-gray-600 dark:placeholder-gray-400
+                                dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
+                                </div>
+                                <div class="mb-6 p-2">
+                                    <label for="fiveStarsection2 " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Five Star section Minimum percentage</label>
+                                    <input type="number" id="fiveStarsection2 " class="shadow-sm bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2  dark:border-gray-600 dark:placeholder-gray-400
+                                dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
+                                </div>
+                                <div class="mb-6 p-2">
+                                    <label for="fiveStarsection3 " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Five Star section Maximum percentage</label>
+                                    <input type="number" id="fiveStarsection3" class="shadow-sm bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2  dark:border-gray-600 dark:placeholder-gray-400
+                                dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
+                                </div>
+                                <div class="mb-6 p-2">
+                                    <label for="fiveStarsectiontotal " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Five Star Posible total</label>
+                                    <input type="number" id="fiveStarsectiontotal " class="shadow-sm bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2  dark:border-gray-600 dark:placeholder-gray-400
+                                dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light " placeholder=" " required=" ">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-6">
+                            <button type=" submit " class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ">Save</button>
+                        </div>
+                    </form>
                 </div>
             </section>
             <!-- ****************************************************************** -->
@@ -192,9 +188,8 @@
                             </h2>
                         </div>
                     </div>
-
-                    <div>
-                        <form action="#" class="border-2 border-blue-800 rounded-lg">
+                    <!-- edit users form  -->
+                    <form action="#" class="border-2 border-blue-800 rounded-lg" style="background-color: white;">
                             <div class="p-6 w-full">
                                 <div class="mb-6 ">
                                     <label for="name " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Name</label>
@@ -226,7 +221,6 @@
                                 <button type=" submit " class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ">Save changes</button>
                             </div>
                         </form>
-                    </div>
                 </div>
             </section>
             <!-- ****************************************************************** -->
@@ -243,11 +237,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="mx-8 pt-8">
-                    <form>
-                        <div class="three_column_sec flex flex-wrap w-full border-2 border-blue-800 rounded-lg p-6">
+                <form>
+                        <div class="three_column_sec flex flex-wrap w-full border-2 border-blue-800 rounded-lg p-6" style="background-color: white;">
                             <!-- first column -->
-                            <div class="p-6 md:w-1/2 xl:w-1/3">
+                            <div class="p-6 w-full">
                                 <div class=" mb-6 ">
                                     <label for="Facilityname " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Facility Name</label>
                                     <input type="text " id="Facilityname " class="shadow-sm bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2  dark:border-gray-600
@@ -269,7 +262,7 @@
                                 <div class="mb-6">
                                     <label for="districts " class=" block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400 ">District</label>
                                     <select id="districts " name="district_id " class="bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2  dark:border-gray-600 dark:placeholder-gray-400
-    dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 ">
+                                        dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 ">
                                         <option value="1 ">Abim</option>
                                         <option value="2 ">Adjumani</option>
                                         <option value="3 ">Agago</option>
@@ -396,7 +389,7 @@
                                 </div>
                             </div>
                             <!-- second column -->
-                            <div class="p-6 md:w-1/2 xl:w-1/3">
+                            <div class="p-6 w-full">
                                 <div class="mb-6 ">
                                     <label for=" management " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400 ">Type of management</label>
                                     <select id="management " class="bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2  dark:border-gray-600 dark:placeholder-gray-400
@@ -427,7 +420,7 @@
                                 </div>
                             </div>
                             <!-- third column -->
-                            <div class="p-6 md:w-1/2 xl:w-1/3">
+                            <div class="p-6 w-full">
                                 <div class="mb-6 ">
                                     <label for="staff " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Number of staff</label>
                                     <input type="text " id="staff " class="shadow-sm bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2  dark:border-gray-600 dark:placeholder-gray-400
@@ -454,7 +447,6 @@
                                 <button type=" submit " class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ">Save changes</button>
                             </div>
                     </form>
-                </div>
             </section>
             
         </main>

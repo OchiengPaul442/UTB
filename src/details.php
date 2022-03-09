@@ -38,7 +38,7 @@
                     </div>
                 </div>
                 <div class="mx-8 pt-8">
-                    <div class="border-2 border-blue-800 rounded-lg p-6">
+                    <div class="border-2 border-blue-800 rounded-lg p-6" style="background-color: white;">
                         <div class="pb-6">
                             <h1 style="font-size: 25px;">Details</h1>
                         </div>
@@ -199,7 +199,7 @@
                                 Non-Essential Marks</button>
                         </a>
                     </div>
-                    <div class="p-6 border-2 border-blue-800 rounded-lg">
+                    <div class="p-6 border-2 border-blue-800 rounded-lg" style="background-color: white;">
                         <div>
                             <h1 style="font-size: 25px;">MARKS</h1>
                         </div>
